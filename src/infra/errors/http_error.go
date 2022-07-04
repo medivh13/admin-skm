@@ -3,7 +3,7 @@ package errors
 import (
 	http "net/http"
 
-	constants "auth-skm/src/infra/constants"
+	constants "admin-skm/src/infra/constants"
 )
 
 type HttpError struct {

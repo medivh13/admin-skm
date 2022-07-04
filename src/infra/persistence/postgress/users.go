@@ -3,16 +3,16 @@ package postgres
 /*
  * Author      : Jody (jody.almaida@gmail.com)
  * Modifier    :
- * Domain      : auth-skm
+ * Domain      : admin-skm
  */
 
 import (
 	"context"
 
-	dtoLogin "auth-skm/src/app/dtos/login"
-	dto "auth-skm/src/app/dtos/users"
-	repositories "auth-skm/src/domain/repositories"
-	models "auth-skm/src/infra/models"
+	dtoLogin "admin-skm/src/app/dtos/login"
+	dto "admin-skm/src/app/dtos/users"
+	repositories "admin-skm/src/domain/repositories"
+	models "admin-skm/src/infra/models"
 
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"

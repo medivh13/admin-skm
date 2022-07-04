@@ -3,12 +3,12 @@ package user_usecases
 /*
  * Author      : Jody (jody.almaida@gmail.com)
  * Modifier    :
- * Domain      : auth-skm
+ * Domain      : admin-skm
  */
 
 import (
-	dto "auth-skm/src/app/dtos/users"
-	"auth-skm/src/domain/repositories"
+	dto "admin-skm/src/app/dtos/users"
+	"admin-skm/src/domain/repositories"
 	"context"
 	"log"
 )

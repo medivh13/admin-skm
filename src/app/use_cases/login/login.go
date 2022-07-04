@@ -3,13 +3,13 @@ package user_usecases
 /*
  * Author      : Jody (jody.almaida@gmail.com)
  * Modifier    :
- * Domain      : auth-skm
+ * Domain      : admin-skm
  */
 
 import (
-	dto "auth-skm/src/app/dtos/login"
-	"auth-skm/src/domain/repositories"
-	infraHelper "auth-skm/src/infra/helpers"
+	dto "admin-skm/src/app/dtos/login"
+	"admin-skm/src/domain/repositories"
+	infraHelper "admin-skm/src/infra/helpers"
 	"context"
 	"log"
 )

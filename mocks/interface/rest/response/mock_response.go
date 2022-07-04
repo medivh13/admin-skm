@@ -3,8 +3,8 @@ package response_test
 import (
 	"net/http"
 
-	"auth-skm/src/infra/errors"
-	"auth-skm/src/interface/rest/response"
+	"admin-skm/src/infra/errors"
+	"admin-skm/src/interface/rest/response"
 
 	"github.com/stretchr/testify/mock"
 )

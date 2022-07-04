@@ -3,13 +3,13 @@ package repositories
 /*
  * Author      : Jody (jody.almaida@gmail.com)
  * Modifier    :
- * Domain      : auth-skm
+ * Domain      : admin-skm
  */
 
 import (
-	dtoLogin "auth-skm/src/app/dtos/login"
-	dto "auth-skm/src/app/dtos/users"
-	models "auth-skm/src/infra/models"
+	dtoLogin "admin-skm/src/app/dtos/login"
+	dto "admin-skm/src/app/dtos/users"
+	models "admin-skm/src/infra/models"
 	"context"
 )
 

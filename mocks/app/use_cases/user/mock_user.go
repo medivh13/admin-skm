@@ -3,7 +3,7 @@ package mock_cases
 import (
 	"context"
 
-	dto "auth-skm/src/app/dtos/users"
+	dto "admin-skm/src/app/dtos/users"
 
 	"github.com/stretchr/testify/mock"
 )

@@ -1,8 +1,8 @@
 package usecases
 
 import (
-	loginUc "auth-skm/src/app/use_cases/login"
-	userUc "auth-skm/src/app/use_cases/user"
+	loginUc "admin-skm/src/app/use_cases/login"
+	userUc "admin-skm/src/app/use_cases/user"
 )
 
 type AllUseCases struct {

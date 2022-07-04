@@ -8,14 +8,14 @@ import (
 	"syscall"
 	"time"
 
-	usecases "auth-skm/src/app/use_cases"
-	"auth-skm/src/infra/config"
-	"auth-skm/src/interface/rest/handlers"
+	usecases "admin-skm/src/app/use_cases"
+	"admin-skm/src/infra/config"
+	"admin-skm/src/interface/rest/handlers"
 
-	"auth-skm/src/interface/rest/response"
-	"auth-skm/src/interface/rest/route"
+	"admin-skm/src/interface/rest/response"
+	"admin-skm/src/interface/rest/route"
 
-	userHandler "auth-skm/src/interface/rest/handlers/user"
+	userHandler "admin-skm/src/interface/rest/handlers/user"
 
 	"github.com/go-chi/chi/middleware"
 	"github.com/go-chi/chi/v5"

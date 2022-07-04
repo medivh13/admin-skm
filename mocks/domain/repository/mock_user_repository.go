@@ -3,15 +3,15 @@ package mock_repository
 /*
  * Author      : Jody (jody.almaida@gmail)
  * Modifier    :
- * Domain      : auth-skm
+ * Domain      : admin-skm
  */
 
 import (
 	"context"
 
-	dtoLogin "auth-skm/src/app/dtos/login"
-	dto "auth-skm/src/app/dtos/users"
-	models "auth-skm/src/infra/models"
+	dtoLogin "admin-skm/src/app/dtos/login"
+	dto "admin-skm/src/app/dtos/users"
+	models "admin-skm/src/infra/models"
 
 	"github.com/stretchr/testify/mock"
 )

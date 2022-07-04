@@ -3,12 +3,12 @@ package handlers
 /*
  * Author      : Jody (jody.almaida@gmail.com)
  * Modifier    :
- * Domain      : auth-skm
+ * Domain      : admin-skm
  */
 import (
 	"net/http"
 
-	"auth-skm/src/interface/rest/response"
+	"admin-skm/src/interface/rest/response"
 )
 
 type IHealthHandler interface {

@@ -1,7 +1,7 @@
 package mock_logindto
 
 import (
-	dto "auth-skm/src/app/dtos/login"
+	dto "admin-skm/src/app/dtos/login"
 
 	"github.com/stretchr/testify/mock"
 )

@@ -5,8 +5,8 @@ import (
 	"errors"
 	"net/http"
 
-	commonError "auth-skm/src/infra/errors"
-	"auth-skm/src/interface/rest/response"
+	commonError "admin-skm/src/infra/errors"
+	"admin-skm/src/interface/rest/response"
 )
 
 const (

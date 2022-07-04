@@ -1,4 +1,4 @@
-module auth-skm
+module admin-skm
 
 go 1.17
 

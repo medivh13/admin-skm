@@ -3,7 +3,7 @@ package user_usecases
 /*
  * Author      : Jody (jody.almaida@gmail.com)
  * Modifier    :
- * Domain      : auth-skm
+ * Domain      : admin-skm
  */
 
 import (
@@ -12,11 +12,11 @@ import (
 	"testing"
 	"time"
 
-	mockDTOuser "auth-skm/mocks/app/dtos/users"
-	mockUserRepo "auth-skm/mocks/domain/repository"
+	mockDTOuser "admin-skm/mocks/app/dtos/users"
+	mockUserRepo "admin-skm/mocks/domain/repository"
 
-	dtoUser "auth-skm/src/app/dtos/users"
-	models "auth-skm/src/infra/models"
+	dtoUser "admin-skm/src/app/dtos/users"
+	models "admin-skm/src/infra/models"
 
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"

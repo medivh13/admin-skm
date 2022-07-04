@@ -1,7 +1,7 @@
 package route
 
 import (
-	userHandler "auth-skm/src/interface/rest/handlers/user"
+	userHandler "admin-skm/src/interface/rest/handlers/user"
 
 	"net/http"
 

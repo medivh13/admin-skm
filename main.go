@@ -4,17 +4,17 @@ import (
 	"context"
 	"database/sql"
 
-	usecases "auth-skm/src/app/use_cases"
+	usecases "admin-skm/src/app/use_cases"
 
-	"auth-skm/src/infra/config"
-	postgres "auth-skm/src/infra/persistence/postgress"
+	"admin-skm/src/infra/config"
+	postgres "admin-skm/src/infra/persistence/postgress"
 
-	"auth-skm/src/interface/rest"
+	"admin-skm/src/interface/rest"
 
-	ms_log "auth-skm/src/infra/log"
+	ms_log "admin-skm/src/infra/log"
 
-	loginUc "auth-skm/src/app/use_cases/login"
-	userUc "auth-skm/src/app/use_cases/user"
+	loginUc "admin-skm/src/app/use_cases/login"
+	userUc "admin-skm/src/app/use_cases/user"
 
 	_ "github.com/joho/godotenv/autoload"
 	"github.com/sirupsen/logrus"

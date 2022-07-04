@@ -3,7 +3,7 @@ package users_handlers
 /*
  * Author      : Jody (jody.almaida@gmail.com)
  * Modifier    :
- * Domain      : auth-skm
+ * Domain      : admin-skm
  */
 
 import (
@@ -11,13 +11,13 @@ import (
 	"fmt"
 	"net/http"
 
-	dtoLogin "auth-skm/src/app/dtos/login"
-	dtoUser "auth-skm/src/app/dtos/users"
-	loginUsecase "auth-skm/src/app/use_cases/login"
-	usecases "auth-skm/src/app/use_cases/user"
+	dtoLogin "admin-skm/src/app/dtos/login"
+	dtoUser "admin-skm/src/app/dtos/users"
+	loginUsecase "admin-skm/src/app/use_cases/login"
+	usecases "admin-skm/src/app/use_cases/user"
 
-	common_error "auth-skm/src/infra/errors"
-	"auth-skm/src/interface/rest/response"
+	common_error "admin-skm/src/infra/errors"
+	"admin-skm/src/interface/rest/response"
 	_ "net/http/pprof"
 )
 
