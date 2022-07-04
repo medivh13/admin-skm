@@ -14,6 +14,7 @@ import (
 	ms_log "admin-skm/src/infra/log"
 
 	loginUc "admin-skm/src/app/use_cases/login"
+	pertanyaanUc "admin-skm/src/app/use_cases/pertanyaan"
 	userUc "admin-skm/src/app/use_cases/user"
 
 	_ "github.com/joho/godotenv/autoload"
@@ -56,6 +57,7 @@ func main() {
 	}(logger, postgresdb.SqlDB, postgresdb.DB.Name())
 
 	userRepository := postgres.NewUsersRepository(postgresdb.DB)
+	pertanyaanRepository := postgres.NewPertanyaanRepository(postgresdb.DB)
 
 	httpServer, err := rest.New(
 		conf.Http,
@@ -63,8 +65,9 @@ func main() {
 		logger,
 		usecases.AllUseCases{
 
-			UserUseCase:  userUc.NewUserUseCase(userRepository),
-			LoginUseCase: loginUc.NewUserUseCase(userRepository),
+			UserUseCase:       userUc.NewUserUseCase(userRepository),
+			LoginUseCase:      loginUc.NewUserUseCase(userRepository),
+			PertanyaanUseCase: pertanyaanUc.NewPertanyaanUseCase(pertanyaanRepository),
 		},
 	)
 	if err != nil {
