@@ -11,6 +11,6 @@ import (
 func PertanyaanRouter(h pertanyaanHandler.PertanyaanHandlerInterface) http.Handler {
 	r := chi.NewRouter()
 
-	r.Get("/pertanyaan", h.GetPertanyaanByOpdAndLayanan)
+	r.Get("/", h.GetPertanyaanByOpdAndLayanan)
 	return r
 }

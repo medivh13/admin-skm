@@ -13,8 +13,8 @@ require (
 	github.com/snowzach/rotatefilehook v0.0.0-20220211133110-53752135082d
 	github.com/stretchr/testify v1.7.2
 	golang.org/x/crypto v0.0.0-20210921155107-089bfa567519
-	gorm.io/driver/postgres v1.3.7
-	gorm.io/gorm v1.23.6
+	gorm.io/driver/postgres v1.1.2
+	gorm.io/gorm v1.21.16
 )
 
 require (

@@ -14,4 +14,5 @@ import (
 
 type PertanyaansRepository interface {
 	GetPertanyaanByLayananAndOPD(ctx context.Context, dto *dto.GetPertanyaanReqDTO) ([]*models.Pertanyaan, error)
+	GetPertanyaanJawabanByPertanyaanId(ctx context.Context, id string) (*models.Jawabans, error)
 }

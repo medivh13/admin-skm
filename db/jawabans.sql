@@ -4,10 +4,10 @@ CREATE TABLE master.jawabans (
     created_at timestamp with time zone DEFAULT now() NOT NULL,
     updated_at timestamp with time zone DEFAULT now() NOT NULL,
     deleted_at timestamp with time zone,
-    pilihan_1 character varying(255) DEFAULT ''::character varying NOT NULL,
-    pilihan_2 character varying(255) DEFAULT ''::character varying NOT NULL,
-    pilihan_3 character varying(255) DEFAULT ''::character varying NOT NULL,
-    pilihan_4 character varying(255) DEFAULT ''::character varying NOT NULL,
+    pilihan_satu character varying(255) DEFAULT '' NOT NULL,
+    pilihan_dua character varying(255) DEFAULT '' NOT NULL,
+    pilihan_tiga character varying(255) DEFAULT '' NOT NULL,
+    pilihan_empat character varying(255) DEFAULT '' NOT NULL,
     CONSTRAINT fk_pertanyaans
       FOREIGN KEY(pertanyaan_id) 
 	  REFERENCES master.pertanyaans(id)
@@ -28,3 +28,21 @@ ALTER TABLE ONLY master.jawabans
     ADD CONSTRAINT jawabans_pkey PRIMARY KEY (id);
 
 CREATE INDEX jawabans_index ON master.jawabans USING btree (deleted_at, id, pertanyaan_id);
+
+
+insert into master.jawabans (pertanyaan_id, pilihan_satu, pilihan_dua, pilihan_tiga, pilihan_empat)
+Values (1, 'jawabansatu', 'jawabandua', 'jawabantiga', 'jawabanempat');
+insert into master.jawabans (pertanyaan_id, pilihan_satu, pilihan_dua, pilihan_tiga, pilihan_empat)
+Values (2, 'jawabansatu', 'jawabandua', 'jawabantiga', 'jawabanempat');
+insert into master.jawabans (pertanyaan_id, pilihan_satu, pilihan_dua, pilihan_tiga, pilihan_empat)
+Values (3, 'jawabansatu', 'jawabandua', 'jawabantiga', 'jawabanempat');
+insert into master.jawabans (pertanyaan_id, pilihan_satu, pilihan_dua, pilihan_tiga, pilihan_empat)
+Values (4, 'jawabansatu', 'jawabandua', 'jawabantiga', 'jawabanempat');
+insert into master.jawabans (pertanyaan_id, pilihan_satu, pilihan_dua, pilihan_tiga, pilihan_empat)
+Values (5, 'jawabansatu', 'jawabandua', 'jawabantiga', 'jawabanempat');
+insert into master.jawabans (pertanyaan_id, pilihan_satu, pilihan_dua, pilihan_tiga, pilihan_empat)
+Values (6, 'jawabansatu', 'jawabandua', 'jawabantiga', 'jawabanempat');
+insert into master.jawabans (pertanyaan_id, pilihan_satu, pilihan_dua, pilihan_tiga, pilihan_empat)
+Values (7, 'jawabansatu', 'jawabandua', 'jawabantiga', 'jawabanempat');
+insert into master.jawabans (pertanyaan_id, pilihan_satu, pilihan_dua, pilihan_tiga, pilihan_empat)
+Values (8, 'jawabansatu', 'jawabandua', 'jawabantiga', 'jawabanempat');
