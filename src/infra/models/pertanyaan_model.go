@@ -13,7 +13,7 @@ import (
 type Pertanyaan struct {
 	ID        int64     `gorm:"id"`
 	Soal      string    `gorm:"soal"`
-	Password  string    `gorm:"password"`
+	Jawaban1  string    `gorm:"pilihan_satu"`
 	CreatedAt time.Time `gorm:"created_at"`
 	UpdatedAt time.Time `gorm:"updated_at"`
 }

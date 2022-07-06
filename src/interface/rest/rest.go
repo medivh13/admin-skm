@@ -15,6 +15,8 @@ import (
 	"admin-skm/src/interface/rest/response"
 	"admin-skm/src/interface/rest/route"
 
+	jawabanHandler "admin-skm/src/interface/rest/handlers/jawaban"
+	layananHandler "admin-skm/src/interface/rest/handlers/layanan"
 	pertanyaanHandler "admin-skm/src/interface/rest/handlers/pertanyaan"
 
 	"github.com/go-chi/chi/middleware"
@@ -93,10 +95,14 @@ func makeRoute(
 	hh := handlers.NewHealthHandler(respClient)
 
 	ph := pertanyaanHandler.NewPertanyaanHandler(respClient, useCases.PertanyaanUseCase)
-	r.Route("/api", func(r chi.Router) {
+	lh := layananHandler.NewLayananHandler(respClient, useCases.LayananUseCase)
+	jh := jawabanHandler.NewJawabanHandler(respClient, useCases.JawabanUseCase)
+	r.Route("/api/skm", func(r chi.Router) {
 		// health check
 		r.Mount("/", route.HealthRouter(hh))
-		r.Mount("/skm", route.PertanyaanRouter(ph))
+		r.Mount("/pertanyaan", route.PertanyaanRouter(ph))
+		r.Mount("/layanan", route.LayananRouter(lh))
+		r.Mount("/jawaban", route.JawabanRouter(jh))
 
 	})
 

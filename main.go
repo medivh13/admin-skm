@@ -13,6 +13,8 @@ import (
 
 	ms_log "admin-skm/src/infra/log"
 
+	jawabanUc "admin-skm/src/app/use_cases/jawaban"
+	layananUc "admin-skm/src/app/use_cases/layanan"
 	loginUc "admin-skm/src/app/use_cases/login"
 	pertanyaanUc "admin-skm/src/app/use_cases/pertanyaan"
 	userUc "admin-skm/src/app/use_cases/user"
@@ -58,6 +60,8 @@ func main() {
 
 	userRepository := postgres.NewUsersRepository(postgresdb.DB)
 	pertanyaanRepository := postgres.NewPertanyaanRepository(postgresdb.DB)
+	layananRepository := postgres.NewLayananRepository(postgresdb.DB)
+	jawabanRepository := postgres.NewJawabanRepository(postgresdb.DB)
 
 	httpServer, err := rest.New(
 		conf.Http,
@@ -68,6 +72,8 @@ func main() {
 			UserUseCase:       userUc.NewUserUseCase(userRepository),
 			LoginUseCase:      loginUc.NewUserUseCase(userRepository),
 			PertanyaanUseCase: pertanyaanUc.NewPertanyaanUseCase(pertanyaanRepository),
+			LayananUseCase:    layananUc.NewLayananUseCase(layananRepository),
+			JawabanUseCase:    jawabanUc.NewJawabanUseCase(jawabanRepository),
 		},
 	)
 	if err != nil {

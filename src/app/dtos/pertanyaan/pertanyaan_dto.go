@@ -28,3 +28,8 @@ type PertanyaanRespDTO struct {
 	ID   int64  `json:"id"`
 	Soal string `json:"soal"`
 }
+
+// ------
+type GetPertanyaanJawabanReqDTO struct {
+	PertanyaanID int64 `json:"id"`
+}
